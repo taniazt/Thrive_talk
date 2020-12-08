@@ -1,0 +1,70 @@
+.nav {
+  background-color: #f4f9e2;
+  height: 80px;
+  max-width: $max-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    color: $color-blue;
+    @include font;
+    font-size: 24px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 235px;
+    z-index: 2;
+  }
+
+  &__menu-item {
+    @include font;
+    font-size: 14px;
+    color: $text-color;
+    cursor: pointer;
+  }
+
+  &__menu-item:hover {
+    font-weight: bold;
+    transform: scale(1.05);
+  }
+
+  &__menu-item a {
+    text-decoration: none;
+  }
+
+  &__menu-item a:visited {
+    color: $text-color;
+  }
+
+  &__menu-item a:active {
+    color: $text-color;
+  }
+
+  &__contact {
+    width: 150px;
+    height: 50px;
+    background: $color-blue;
+    border-radius: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    @include font;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  &__contact:hover {
+    background: #fff;
+    color: $color-blue;
+    border: 1px solid $color-blue;
+  }
+}
