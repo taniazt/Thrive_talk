@@ -148,6 +148,10 @@
       display: none;
     }
 
+    #menuToggle {
+      display: block;
+    }
+
     &__contact {
       width: 110px;
       height: 40px;
@@ -290,11 +294,6 @@
       padding-left: 10px;
     }
 
-    &__text {
-      padding: 5px;
-
-    }
-
     &__leftside {
       height: 500px;
       width: 100%;
@@ -328,6 +327,10 @@
       line-height: 30px;
       width: 290px;
     }
+
+    &__rightside {
+      display: none;
+    }
   }
 
   .info {
@@ -340,7 +343,7 @@
 
     &__block {
       margin-top: 30px;
-      padding: 5px;
+      padding: 10px;
     }
 
     &__leftside {
